@@ -19,6 +19,22 @@ Make sure your new model follows the required format and naming conventions as d
 
 After replacing the model, restart the application to load your custom model for recognition.
 
+### 🏷️ Customizing Class Names
+
+When capturing datasets live, you can assign class names according to your preference—simply enter the desired name when prompted during the capture process.  
+If you are using a dataset folder, the folder name will automatically be used as the person's class name.  
+This ensures that your model recognizes faces based on the names you provide, making the system flexible and easy to personalize.
+
+### 📝 Updating Class Names in Code
+
+To customize the recognized class names in this application, update the `classNames` array in this code:
+
+```js
+const classNames = ["Max", "Jack", "James"];
+```
+
+Replace `"Person1"`, `"Person2"`, and `"Person3"` with your desired names.  
+This ensures the application displays the correct labels when recognizing faces.
 ### 🌟 Planned Updates
 
 - **Automated Model Training:**  
