@@ -3,7 +3,7 @@ import * as blazeface from "@tensorflow-models/blazeface";
 import * as tf from "@tensorflow/tfjs";
 import "@tensorflow/tfjs-backend-webgl";
 
-const MODEL_URL = process.env.PUBLIC_URL + "/model/model.json"; // Path to your converted model
+const MODEL_URL = process.env.PUBLIC_URL + "/model/face_rec_model_tfjs.json"; // Path to your converted model
 
 const FaceRecognition = () => {
   const videoRef = useRef();
